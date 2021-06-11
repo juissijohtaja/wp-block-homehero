@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "homehero/homehero",
+	"title": "Home Hero",
+	"category": "media",
+	"icon": "palmtree",
+	"description": "My great hero block.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "homehero",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

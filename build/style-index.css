@@ -1,0 +1,79 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@font-face {
+  font-family: Gilbert;
+  src: url(fonts/gilbert-color.02d3d364.otf);
+  font-weight: bold;
+}
+.wp-block-homehero-homehero {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+}
+
+@media screen and (min-width: 600px) {
+  @supports (display: grid) {
+    .wp-block-homehero-homehero {
+      display: -ms-grid;
+      display: grid;
+      grid-gap: 10px;
+      -ms-grid-columns: 1fr (minmax(auto, 12em))[1] 1fr;
+      grid-template-columns: 1fr repeat(1, minmax(auto, 12em)) 1fr;
+      -ms-grid-rows: 1fr 4em 1fr;
+      grid-template-rows: 1fr 4em 1fr;
+    }
+
+    .wp-block-homehero-homehero .herocontent {
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 1;
+      grid-column: 2/3;
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      grid-row: 2/3;
+    }
+  }
+}
+.wp-block-homehero-homehero {
+  margin: 0.5em 0;
+  color: #fff;
+  font-family: Gilbert;
+  font-size: 44px;
+  min-height: 450px;
+}
+@media (min-width: 600px) {
+  .wp-block-homehero-homehero {
+    font-size: 64px;
+    min-height: 600px;
+  }
+}
+.wp-block-homehero-homehero .herocontent {
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  padding: 0 20px;
+}
+.wp-block-homehero-homehero .herobutton {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+@media (min-width: 600px) {
+  .wp-block-homehero-homehero .herobutton {
+    margin-left: 0px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/
